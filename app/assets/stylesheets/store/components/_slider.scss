@@ -58,6 +58,32 @@
   .bx-wrapper .bx-pager {
     bottom: -35px;
   }
+
+  .product-price {
+    display: block;
+    clear: both;
+  }
+
+  input[type="number"] {
+    margin-right: 25px;
+    width: 50px;
+  }
+
+  button, input[type="number"] {
+    background-color: white;
+    color: $c_orange;
+    border-color: darken($c_green, 5);
+    font-size: 16px;
+    vertical-align: text-bottom;
+
+    &:hover {
+      color: darken($c_orange, 5) !important;
+    }
+
+    i {
+      color: $c_blue;
+    }
+  }
 }
 
 .carousel {
@@ -96,11 +122,12 @@
     display: block;
     background-color: white;
     border: 5px solid lighten($c_green, 15);
-    padding: 20px;
+    padding: 0;
     overflow: hidden;
 
     img {
       @include border-radius(75px);
+      margin-bottom: -7px;
     }
   }
 }

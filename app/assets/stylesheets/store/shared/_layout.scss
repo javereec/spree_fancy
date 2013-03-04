@@ -98,14 +98,15 @@ body {
     a {
       @include border-radius(165px);
       border-width: 2px;
-      width: 160px;
-      height: 160px;
+      width: 240px;
+      height: 240px;
+      padding: 0;
     }
 
     img {
       @include border-radius(45px);
-      width: 160px;
-      height: 160px;
+      width: 240px;
+      height: 240px;
     }
   }
 }
@@ -140,8 +141,8 @@ ul#products li {
 
       img {
         @include border-radius(0);
-        width: 150px;
-        height: 150px;
+        width: 220px;
+        height: 220px;
       }
     }
   }
